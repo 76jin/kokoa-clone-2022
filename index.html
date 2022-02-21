@@ -17,28 +17,27 @@
             padding: 5px;
             border-radius: 10px;
         }
-        p span {
-            color: white;
+        input {
+            border: 1px solid wheat;
         }
-        div > span {
-            text-decoration: underline;
+        input:required {
+            border-color: tomato;
         }
-        p + span {
-            text-decoration: line-through;
+        input[type="password"] {
+            background-color: red;
         }
-        p ~ span {
-            text-decoration: line-through;
+        input[placeholder~="name"] {
+            background-color: pink;
         }
     </style>
 </head>
 <body>
     <div>
-        <span>hello</span>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-            Lorem Ipsum has been the industry's standard dummy text. <span>insinde</span>
-        </p>
-        <address>seoul city</address>
-        <span>hello2</span>
+        <form>
+            <input type="text" placeholder="First name" />
+            <input type="text" placeholder="Last name" />
+            <input type="password" placeholder="password" required />
+        </form>
     </div>
 </body>
 </html>
