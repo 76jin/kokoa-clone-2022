@@ -8,26 +8,29 @@
 
     <link rel="stylesheet" href="styles.css" />
     <style>
-        :root {
-            --main-color: #fcce00;
-            --default-border: 1px solid var(--main-color);
-        }
         body {
             height: 100vh;
             margin: 50px;
         }
-        p {
-            background-color: var(--main-color);
-        }
         a {
-            color: var(--main-color);
-            border: var(--default-border);
+            color: wheat;
+            background-color: tomato;
+            text-decoration: none;
+            padding: 3px 5px;
+            border-radius: 5px;
+            font-size: 100px;
+            /* transition: background-color 3s ease-in-out; */
+            transition: all 3s ease-in-out;
+        }
+        a:hover {
+            color: tomato;
+            background-color: wheat;
+            border-radius: 50px;
         }
     </style>
 </head>
 <body>
     <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo labore exercitationem quae deleniti neque aut pariatur obcaecati repellendus mollitia enim error doloremque distinctio, expedita modi ea dolorum, adipisci quis.</p>
         <a href="https://www.google.com">Go to google</a>
     </div>
     </div>
