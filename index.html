@@ -8,30 +8,26 @@
 
     <link rel="stylesheet" href="styles.css" />
     <style>
+        :root {
+            --main-color: #fcce00;
+            --default-border: 1px solid var(--main-color);
+        }
         body {
             height: 100vh;
             margin: 50px;
         }
-        button:active {
-            background-color: tomato;
+        p {
+            background-color: var(--main-color);
         }
-        input:hover {
-            background-color: green;
-        }
-        input:focus {
-            background-color: aqua;
-        }
-        a:visited {
-            color: red;
+        a {
+            color: var(--main-color);
+            border: var(--default-border);
         }
     </style>
 </head>
 <body>
     <div>
-        <button>Hello</button>
-        <input type="text">
-        <input type="text">
-        <a href="https://www.nate.com">Go to nate</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur explicabo labore exercitationem quae deleniti neque aut pariatur obcaecati repellendus mollitia enim error doloremque distinctio, expedita modi ea dolorum, adipisci quis.</p>
         <a href="https://www.google.com">Go to google</a>
     </div>
     </div>
