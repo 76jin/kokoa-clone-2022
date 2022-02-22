@@ -12,32 +12,28 @@
             height: 100vh;
             margin: 50px;
         }
-        span {
-            background-color: yellowgreen;
-            padding: 5px;
-            border-radius: 10px;
+        button:active {
+            background-color: tomato;
         }
-        input {
-            border: 1px solid wheat;
+        input:hover {
+            background-color: green;
         }
-        input:required {
-            border-color: tomato;
+        input:focus {
+            background-color: aqua;
         }
-        input[type="password"] {
-            background-color: red;
-        }
-        input[placeholder~="name"] {
-            background-color: pink;
+        a:visited {
+            color: red;
         }
     </style>
 </head>
 <body>
     <div>
-        <form>
-            <input type="text" placeholder="First name" />
-            <input type="text" placeholder="Last name" />
-            <input type="password" placeholder="password" required />
-        </form>
+        <button>Hello</button>
+        <input type="text">
+        <input type="text">
+        <a href="https://www.nate.com">Go to nate</a>
+        <a href="https://www.google.com">Go to google</a>
+    </div>
     </div>
 </body>
 </html>
