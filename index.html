@@ -8,18 +8,18 @@
 
     <link rel="stylesheet" href="styles.css" />
     <style>
+        @keyframes coinFlip {
+            from {
+                transform: rotateY(0);
+            }
+            to {
+                transform: rotateY(360deg);
+            }
+        }
         img {
             border: 1px solid black;
             border-radius: 50%;
-            /* transform: rotateY(80deg) rotateY(20deg) rotateZ(30deg); */
-            /* transform: rotateZ(30deg); */
-            /* transform: scale(2, 2); */
-            /* transform: translate(20px); */
-            transition: transform 1s ease-in-out;
-        }
-        img:hover {
-            /* transform: rotateZ(90deg); */
-            transform: rotateY(360deg) scale(0.5);
+            animation: coinFlip 3s ease-in-out infinite;
         }
     </style>
 </head>
